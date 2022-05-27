@@ -1,0 +1,12 @@
+<h1>Lista completa:</h1>
+<a href="/formu"><button>Criar Postagem</button></a>
+    
+
+{{#each posts}}
+    <hr>
+    <small>{{createdAt}}</small>
+    <h1>{{titulo}}</h1>
+    <p>{{conteudo}}</p>
+    <a href="/deletar/{{id}}"><button>Deletar</button></a>
+    <hr>
+{{/each}}

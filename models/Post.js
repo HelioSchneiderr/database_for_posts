@@ -1,0 +1,13 @@
+const db = require(`./db`)
+
+const post = db.sequelize.define(`posts`, {
+    titulo: {
+        type: db.Sequelize.STRING
+    },
+    conteudo: {
+        type: db.Sequelize.TEXT
+    }
+})
+
+module.exports = post;
+//post.sync({force:true})
